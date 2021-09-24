@@ -1,3 +1,9 @@
+/**
+ * @author Derek Gibson- ddgibson
+ * CIS175 - Fall 2021
+ * September 23, 2021
+ */
+
 package controller;
 
 import java.io.IOException;
