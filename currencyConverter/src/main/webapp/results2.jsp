@@ -10,6 +10,6 @@
 <p>${userTmp.getTemp()} degrees Celsius <br />
 
 </p>
-<a href="converter.jsp">Select another temperature</a>
+<a href="tempConverter.jsp">Select another temperature</a>
 </body>
 </html>

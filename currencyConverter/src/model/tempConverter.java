@@ -26,7 +26,7 @@ public class tempConverter {
 	}
 	
 	public double getTemp() {
-		return temp;
+		return celsius;
 	}
 	
 	public String toString() {
