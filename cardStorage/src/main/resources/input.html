@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Insert New Card</title> 
+</head> 
+<body> 
+ <form th:object="${newCard}" 
+th:action="@{/update/{id}(id=${newCard.id})}" method=POST>
+  
+Name: <input name="name" size="20" th:field="*{name}"><br /> 
+ 
+Color: <input name="color" size="20" 
+th:field="*{color}"><br /> 
+ 
+Type: <input name="type" size="20" th:field="*{type}"><br /> 
+ 
+Power: <input name="cardText.power" size="20" 
+th:field="*{cardText.power}"><br /> 
+ 
+City: <input name="cardText.toughness" size="20" 
+th:field="*{cardText.toughness}"><br /> 
+ 
+State: <input name="cardText.description" size="20" 
+th:field="*{cardText.description}"><br />
+ <input name="submit" type="submit" value="submit" /> 
+ </form> 
+<a href="viewAll">View all Cards</a> 
+</body> 
+</html>
